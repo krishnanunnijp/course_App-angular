@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h3>ADD course</h3>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="title" class="form-label">title:</label>
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="venue" class="form-label">venue:</label>
+                    <input name="venue" [(ngModel)]="venue" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="description" class="form-label">description:</label>
+                    <textarea cols="7" name="description" [(ngModel)]="description" type="text" class="form-control"></textarea>
+                </div>
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="duration" class="form-label">duration:</label>
+                    <input name="duration" [(ngModel)]="duration" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="date" class="form-label">date:</label>
+                    <input name="date" [(ngModel)]="date" type="date" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-success">add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
