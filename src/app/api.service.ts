@@ -11,4 +11,7 @@ export class ApiService {
   fetchCourse=(readValue:any)=>{
     return this.http.post("http://localhost:8080/add",readValue)
   }
+  fetchCourses=()=>{
+    return this.http.get("http://localhost:8080/viewAll")
+  }
 }

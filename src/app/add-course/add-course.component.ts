@@ -30,8 +30,11 @@ export class AddCourseComponent {
     }
     console.log(this.data)
     this.api.fetchCourse(this.data).subscribe(
-      (generatedO)=>{
+      (generatedO:any)=>{
         console.log(generatedO)
+        if(generatedO.status=="success"){
+          alert("added successfully")
+        }
       }
     )
   }
