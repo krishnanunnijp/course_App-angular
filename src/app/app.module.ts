@@ -10,6 +10,7 @@ import{HttpClientModule}from "@angular/common/http";
 import { ViewApiComponent } from './view-api/view-api.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DeletePageComponent } from './delete-page/delete-page.component'
+import { SearchCourseComponent } from './search-course/search-course.component';
 const myRoute:Routes=[
 {
   path:"",
@@ -20,6 +21,9 @@ const myRoute:Routes=[
 },{
   path:"delete",
   component: DeletePageComponent
+},{
+  path:"search",
+  component: SearchCourseComponent
 }
 ]
 
@@ -29,7 +33,8 @@ const myRoute:Routes=[
     AddCourseComponent,
     ViewApiComponent,
     NavbarComponent,
-    DeletePageComponent
+    DeletePageComponent,
+    SearchCourseComponent
   ],
   imports: [
     BrowserModule,
