@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { FormsModule } from '@angular/forms';
 import{HttpClientModule}from "@angular/common/http";
-import { ViewApiComponent } from './view-api/view-api.component'
+import { ViewApiComponent } from './view-api/view-api.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { DeletePageComponent } from './delete-page/delete-page.component'
 const myRoute:Routes=[
 {
   path:"",
@@ -15,6 +17,9 @@ const myRoute:Routes=[
 },{
   path:"view",
   component: ViewApiComponent
+},{
+  path:"delete",
+  component: DeletePageComponent
 }
 ]
 
@@ -22,7 +27,9 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddCourseComponent,
-    ViewApiComponent
+    ViewApiComponent,
+    NavbarComponent,
+    DeletePageComponent
   ],
   imports: [
     BrowserModule,

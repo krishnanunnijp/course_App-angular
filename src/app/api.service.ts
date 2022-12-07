@@ -14,4 +14,7 @@ export class ApiService {
   fetchCourses=()=>{
     return this.http.get("http://localhost:8080/viewAll")
   }
+  deleteCourse=(readValue2:any)=>{
+    return this.http.delete("http://localhost:8080/delete",readValue2)
+  }
 }
