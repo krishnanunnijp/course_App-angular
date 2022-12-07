@@ -15,6 +15,7 @@ deleteEN=()=>{
   this.data={
     "name":this.name
   }
+  
   console.log(this.data)
   this.api.deleteCourse(this.data).subscribe(
     (generated)=>{
